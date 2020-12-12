@@ -1,8 +1,8 @@
 module.exports = {
   title: 'Puth',
   tagline: 'Puth is a nice browser testing framework with focus on stability, performance and extensive feedback.',
-  url: 'https://seuh.github.io/',
-  baseUrl: '/puth-docs/',
+  url: 'https://docs.puth.dev',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
