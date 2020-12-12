@@ -13,8 +13,8 @@ module.exports = {
     navbar: {
       title: 'Puth',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Puth Logo',
+        src: 'img/puth-logo-white.png',
       },
       items: [
         {
