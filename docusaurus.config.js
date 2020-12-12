@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Puth',
   tagline: 'Puth is a nice browser testing framework with focus on stability, performance and extensive feedback.',
-  url: 'https://docs.puth.dev',
+  url: 'https://puth.dev',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -45,7 +45,7 @@ module.exports = {
           position: 'left',
         },
         {
-          href: 'https://github.com/puth/core',
+          href: 'https://github.com/SEUH/puth',
           label: 'GitHub',
           position: 'right',
         },
@@ -122,25 +122,25 @@ module.exports = {
           path: 'docs',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/puth/website/edit/master/website/',
+          editUrl: 'https://github.com/SEUH/puth-docs/edit/master/docs/',
         },
         api: {
           path: 'api',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/puth/website/edit/master/website/',
+          editUrl: 'https://github.com/SEUH/puth-docs/edit/master/docs/',
         },
         plugins: {
           path: 'plugins',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/puth/website/edit/master/website/',
+          editUrl: 'https://github.com/SEUH/puth-docs/edit/master/docs/',
         },
         clients: {
           path: 'clients',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/puth/website/edit/master/website/',
+          editUrl: 'https://github.com/SEUH/puth-docs/edit/master/docs/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
