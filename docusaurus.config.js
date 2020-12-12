@@ -1,13 +1,13 @@
 module.exports = {
   title: 'Puth',
   tagline: 'Puth is a nice browser testing framework with focus on stability, performance and extensive feedback.',
-  url: 'https://puth.com',
-  baseUrl: '/',
+  url: 'https://seuh.github.io/',
+  baseUrl: '/puth-docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'Blackcore', // Usually your GitHub org/user name.
-  projectName: 'puth', // Usually your repo name.
+  organizationName: 'SEUH',
+  projectName: 'puth-docs',
   themeConfig: {
     sidebarCollapsible: false,
     navbar: {
