@@ -9,6 +9,9 @@ module.exports = {
   organizationName: 'SEUH',
   projectName: 'puth-docs',
   themeConfig: {
+    colorMode: {
+      defaultMode: 'dark',
+    },
     sidebarCollapsible: false,
     navbar: {
       title: 'Puth',
