@@ -15,5 +15,5 @@ Puth comes with a CLI where you can set different options.
     |                  |             | your server to be accessible from everywhere,   |
     |                  |             | you can use `-a 0.0.0.0`                        |
     |------------------|---------------------------------------------------------------|
-    | `--debug`        | false       | Enables or disables debug output                |
+    | `--debug` `-d`   | false       | Enables or disables debug output                |
     |------------------|---------------------------------------------------------------|
