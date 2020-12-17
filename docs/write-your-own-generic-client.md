@@ -6,15 +6,16 @@ sidebar_label: Write your own client
 
 Here you will learn how to create a client for Puth. Puth is on the one hand a http server over which you work via remote prcedure calls on the remote objects.
 
-## [Puths Api](api)
+## [Puths Api](server-api)
 
 We use the following 5 api endpoints to write our own client.
 
-- [Create Context](api#create-context): `POST /context`
-- [Delete Context](api#delete-context): `DELETE /context`
-- [Call on Context](api#call-on-context): `PATCH /context/call`
-- [Get on Context](api#get-on-context): `PATCH /context/get`
-- [Set on Context](api#set-on-context): `PATCH /context/set`
+- [Create Context](server-api#create-context): `POST /context`
+- [Delete Context](server-api#delete-context): `DELETE /context`
+- [Call on Context](server-api#call-on-context): `PATCH /context/call`
+- [Get on Context](server-api#get-on-context): `PATCH /context/get`
+- [Set on Context](server-api#set-on-context): `PATCH /context/set`
+- [Delete on Context](server-api#delete-on-context): `PATCH /context/delete`
 
 ## Principles of remote object interactions
 
