@@ -12,7 +12,7 @@ With a POST request on /context you can create a context.
 - Url: `/context`
 - Method: `POST`
 
-**Post data structure**
+**Data structure**
 
 ```json
 {
@@ -39,7 +39,7 @@ With a DELETE request on /context you can delete a context.
 - Url: `/context`
 - Method: `DELETE`
 
-**Post data structure**
+**Data structure**
 
 ```json
 {
@@ -48,7 +48,7 @@ With a DELETE request on /context you can delete a context.
 }
 ```
 
-Example post data
+Example data
 
 ```json
 {
@@ -66,7 +66,7 @@ With a PATCH request on /context/call you can call a function on a remote object
 - Url: `/context/call`
 - Method: `PATCH`
 
-**Post data structure**
+**Data structure**
 
 If you don't provide an `id` and a `type`, Puth will call the function on the context object.
 
@@ -80,7 +80,7 @@ If you don't provide an `id` and a `type`, Puth will call the function on the co
 }
 ```
 
-Example post data
+Example data
 
 ```json
 {
@@ -118,9 +118,83 @@ For example: calling `newPage` function on the browser object:
   },
   "id": "c0117100-5c8b-461a-b4e3-647ef7a7ed61",
   "type": "GenericObject",
-  "function": "newPage",
+  "function": "newPage"
 }
 ```
 
-- `PATCH /context/get` `With a PATCH request on /context/get you can get a property from a remote object.`
-- `PATCH /context/set` `With a PATCH request on /context/set you can set a property of a remote object.`
+### Get on Context
+
+With a PATCH request on /context/get you can get a property of a remote object.
+
+- Url: `/context/get`
+- Method: `PATCH`
+
+**Data structure**
+
+```json
+{
+  "context": {
+    "id": "c0117100-5c8b-461a-b4e3-647ef7a7ed61",
+    "type": "Context"
+  },
+  "id": "c0117100-5c8b-461a-b4e3-647ef7a7ed61",
+  "type": "GenericObject",
+  "property": "isDisposed"
+}
+```
+
+#### Success response (Code: 200 OK)
+
+```json
+{
+    "type": "GenericValue",
+    "value": false
+}
+```
+
+### Set on Context
+
+With a PATCH request on /context/set you can set a property to a specific value of a remote object.
+
+- Url: `/context/set`
+- Method: `PATCH`
+
+**Data structure**
+
+```json
+{
+  "context": {
+    "id": "c0117100-5c8b-461a-b4e3-647ef7a7ed61",
+    "type": "Context"
+  },
+  "id": "c0117100-5c8b-461a-b4e3-647ef7a7ed61",
+  "type": "GenericObject",
+  "property": "isDisposed",
+  "value": true
+}
+```
+
+#### Success response (Code: 200 OK)
+
+### Delete on Context
+
+With a PATCH request on /context/delete you can delete a property of a remote object.
+
+- Url: `/context/delete`
+- Method: `PATCH`
+
+**Data structure**
+
+```json
+{
+  "context": {
+    "id": "c0117100-5c8b-461a-b4e3-647ef7a7ed61",
+    "type": "Context"
+  },
+  "id": "c0117100-5c8b-461a-b4e3-647ef7a7ed61",
+  "type": "GenericObject",
+  "property": "isDisposed"
+}
+```
+
+#### Success response (Code: 200 OK)
