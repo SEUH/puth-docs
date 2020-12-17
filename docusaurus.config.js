@@ -122,25 +122,25 @@ module.exports = {
           path: 'docs',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/SEUH/puth-docs/edit/master/docs/',
+          editUrl: 'https://github.com/SEUH/puth-docs/edit/master/',
         },
         api: {
           path: 'server-api',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/SEUH/puth-docs/edit/master/docs/',
+          editUrl: 'https://github.com/SEUH/puth-docs/edit/master/',
         },
         plugins: {
           path: 'plugins',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/SEUH/puth-docs/edit/master/docs/',
+          editUrl: 'https://github.com/SEUH/puth-docs/edit/master/',
         },
         clients: {
           path: 'clients',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/SEUH/puth-docs/edit/master/docs/',
+          editUrl: 'https://github.com/SEUH/puth-docs/edit/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
