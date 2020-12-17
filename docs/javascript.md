@@ -12,26 +12,34 @@ In this example, we will use nodejs to run the example code.
 So lets require the Puth Client, make our first context and open this website.
 
 ```js
-const PuthClient = require('puth/lib/clients/js');
+const {RemotePuthClient, LocalPuthClient} = require("puth");
 
-// Setup the Puth Client
-const puth = new PuthClient('http://127.0.0.1:4000');
-
-// Create a new Context
-let context = await puth.contextCreate();
-
-// Creating a Browser instance
-let browser = await context.createBrowser({
-  headless: false, // With headless = false, you will see the Browser window
-});
-
-// Use the Browsers default Page
-let page = (await browser.pages())[0];
-
-// Lets open this website in the Browser
-await page.goto('https://puth.io/docs/clients/javascript');
-
-// Thats it! :)
+(async () => {
+  // Setup the Puth Client
+  // const client = new LocalPuthClient();
+  const puth = new RemotePuthClient('http://127.0.0.1:4000');
+  
+  // Create a new Context
+  let context = await puth.contextCreate();
+  
+  // Creating a Browser instance
+  let browser = await context.createBrowser({
+    headless: false, // With headless = false, you will see the Browser window
+  });
+  
+  // Use the Browsers default Page
+  let page = (await browser.pages())[0];
+  
+  // Lets open this website in the Browser
+  await page.goto('https://puth.dev/docs/javascript');
+  
+  console.log('Successfully opened', await page.url());
+  
+  // Destroy the context
+  await context.destroy();
+  
+  // Thats it! :)
+})();
 ```
 
 ### What is a Context
