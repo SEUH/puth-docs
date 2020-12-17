@@ -11,7 +11,8 @@ module.exports = {
     'write-your-own-plugin',
   ],
   api: [
-    'api',
+    'client-api',
+    'server-api',
     'cli',
   ],
 };

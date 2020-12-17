@@ -3,11 +3,11 @@ id: installation
 title: Installation
 ---
 
-### Requirements
+## Requirements
 
 - Node.js version >= 12
 
-### Installation
+## Installation
 
 You need the core package for basic operation. It contains a chromium browser and a server.
 
@@ -15,7 +15,7 @@ You need the core package for basic operation. It contains a chromium browser an
 npm i --dev puth
 ```
 
-### Start
+## Start the server
 
 ```bash
 puth start
@@ -39,4 +39,15 @@ And execute it with
 npm run puth
 ```
 
-Thats it! Now select a Puth Client and start writing tests or whatever you want to do with a Browser.
+## Configuration
+
+You can configure plugins for puth in the `puth.config.json` file inside your projects root directory.
+Puth will create this file after you have installed Puth. The configuration file is only used if you use Puth`s CLI.
+
+```json title="puth.config.json"
+{
+  "plugins": [
+    "puth/lib/plugins/PuthStandardPlugin"
+  ]
+}
+```

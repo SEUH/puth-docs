@@ -1,6 +1,6 @@
 ---
-id: api
-title: Puth Api
+id: server-api
+title: Puth Server Api
 ---
 
 Puth is on the one hand a http server over which you work via remote prcedure calls on the remote objects.

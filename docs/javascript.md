@@ -26,7 +26,7 @@ let browser = await context.createBrowser({
 });
 
 // Use the Browsers default Page
-let page = await browser.pages()[0];
+let page = (await browser.pages())[0];
 
 // Lets open this website in the Browser
 await page.goto('https://puth.io/docs/clients/javascript');

@@ -40,7 +40,7 @@ module.exports = {
         },
         {
           type: 'doc',
-          docId: 'api',
+          docId: 'client-api',
           label: 'Api',
           position: 'left',
         },
@@ -102,7 +102,7 @@ module.exports = {
           items: [
             {
               label: 'Puths Api',
-              to: 'docs/api',
+              to: 'docs/server-api',
             },
             {
               label: 'CLI',
@@ -125,7 +125,7 @@ module.exports = {
           editUrl: 'https://github.com/SEUH/puth-docs/edit/master/docs/',
         },
         api: {
-          path: 'api',
+          path: 'server-api',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/SEUH/puth-docs/edit/master/docs/',
