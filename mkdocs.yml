@@ -13,17 +13,17 @@ copyright: Copyright &copy; 2020 - 2022 Sebastian Ühlin
 nav:
   - Home: index.md
   - Installation: installation.md
+  - Reference:
+      - General: reference/general.md
+      - Commands:
+          - Browser: reference/commands/browser.md
+          - Page: reference/commands/page.md
+          - ElementHandle: reference/commands/element-handle.md
+      - PHP:
+          - Setup: reference/php/setup.md
+          - Assertions: reference/php/assertions.md
   - Clients: installation.md
   - Plugins: installation.md
-  - Api:
-    - General: api/general.md
-    - Commands:
-        - Browser: api/commands/browser.md
-        - Page: api/commands/page.md
-        - ElementHandle: api/commands/element-handle.md
-    - PHP:
-        - Setup: api/php/setup.md
-        - Assertions: api/php/assertions.md
 
 theme:
   name: material
