@@ -16,6 +16,7 @@ nav:
   - Clients: installation.md
   - Plugins: installation.md
   - Api:
+    - General: api/general.md
     - Commands:
         - Browser: api/commands/browser.md
         - Page: api/commands/page.md
