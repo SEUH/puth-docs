@@ -16,6 +16,10 @@ nav:
   - Clients: installation.md
   - Plugins: installation.md
   - Api:
+    - Commands:
+        - Browser: api/commands/browser.md
+        - Page: api/commands/page.md
+        - ElementHandle: api/commands/element-handle.md
     - PHP:
         - Setup: api/php/setup.md
         - Assertions: api/php/assertions.md
@@ -59,7 +63,17 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
-  - pymdownx.highlight
+  - pymdownx.highlight:
+      extend_pygments_lang:
+        - name: php-inline
+          lang: php
+          options:
+            startinline: true
+        - name: php
+          lang: php
+          options:
+            startinline: true
+      linenums_style: pymdownx-inline
   - pymdownx.inlinehilite
   - pymdownx.tabbed:
       alternate_style: true
@@ -68,3 +82,4 @@ markdown_extensions:
       custom_checkbox: true
   - toc:
       permalink: true
+

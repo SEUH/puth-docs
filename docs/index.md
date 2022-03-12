@@ -45,8 +45,6 @@ very simple api that can be used to control Puth. There is also the Puth GUI whi
     ```
 === "PHPUnit"
     ``` php
-    <?php
-    
     use Puth\PuthTestCase;
     
     class BasicTest extends PuthTestCase
