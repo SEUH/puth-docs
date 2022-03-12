@@ -9,7 +9,8 @@ Puth is a nice browser testing framework with focus on stability, performance, e
 
 ## Why Puth
 
-Puth solves the problem of being able to run browser tests in any programming language. It does this by providing a very simple api that can be used to control Puth.
+Puth solves the problem of being able to run browser tests in any programming language. It does this by providing a 
+very simple api that can be used to control Puth. There is also the Puth GUI which lets you look into what Puth is doing.
 
 ## Easy to use and clean to write
 
@@ -40,15 +41,13 @@ Puth solves the problem of being able to run browser tests in any programming la
       // Destroy the context
       await context.destroy();
       
-      // Thats it! :)
-      
     })();
     ```
 === "PHPUnit"
     ``` php
     <?php
     
-    use Puth\Traits\PuthTestCase;
+    use Puth\PuthTestCase;
     
     class BasicTest extends PuthTestCase
     {
@@ -57,7 +56,7 @@ Puth solves the problem of being able to run browser tests in any programming la
             $this->page->goto('https://puth.dev/');
             
             // Assert that the visited sites url is the expected
-            $this->assertEquals('https://puth.dev/', $this->page->url());
+            $this->assertUrlIs('https://puth.dev/');
         }
     }
     ```

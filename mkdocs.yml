@@ -1,0 +1,70 @@
+site_name: Puth
+site_url: https://puth.dev/
+site_author: Sebastian Ühlin
+site_description: Puth is a nice browser testing framework with focus on stability, performance and extensive feedback.
+
+repo_name: SEUH/puth
+repo_url: https://github.com/SEUH/puth
+
+edit_uri: ""
+
+copyright: Copyright &copy; 2020 - 2022 Sebastian Ühlin
+
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Clients: installation.md
+  - Plugins: installation.md
+  - Api:
+    - PHP:
+        - Setup: api/php/setup.md
+        - Assertions: api/php/assertions.md
+
+theme:
+  name: material
+  custom_dir: overrides
+  logo: assets/logo.png
+  favicon: images/favicon.png
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - content.tabs.link
+  palette:
+    - scheme: puth-dark
+      accent: puth
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+    - scheme: puth-light
+      accent: puth
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/SEUH
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/r/seuh/puth
+
+markdown_extensions:
+  - attr_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - toc:
+      permalink: true
